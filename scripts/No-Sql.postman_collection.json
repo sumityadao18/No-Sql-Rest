@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "a588fa23-2e57-4e37-aa94-f9b8688b3371",
+		"name": "No-Sql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save a request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n \t\t\t\"id\": 1,\n            \"name\": \"K-FIM-Rahmen 01.06.19-31.05.21 (+2Jahre optional)\",\n            \"brandEval\": \"N\",\n            \"groupEval\": \"Y\",\n            \"aepsId\": \"AEPS 2019 006973\",\n            \"globeId\": \"AEPS 2019 006973\",\n            \"status\": 15,\n            \"prmNote\": \"\",\n            \"dueDate\": \"29.05.2019\",\n            \"presentationDateAgenda\": \"05.06.2019\",\n            \"presentationDateProposed\": \"\",\n            \"receivedDate\": \"29.05.2019\",\n            \"modifiedDate\": \"03.06.2019\",\n            \"eclassId\": \"99-00-12-17\",\n            \"eclassName\": \"VW+ IT Systementwicklung und Systemrealisierung Mainframe, COBOL\"\n        }\n    ]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get latest version of request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/AEPS 2019 006973",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AEPS 2019 006973"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all versions of request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/AEPS 2019 006973",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AEPS 2019 006973"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
